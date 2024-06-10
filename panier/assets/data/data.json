@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "nom": "Fromage Cheddar",
+    "prix": 4794,
+    "description": "Sandales double brides beige",
+    "photos": ["./assets/img/produits/sandales-double-brides-beige-.jpg"],
+    "stock": {
+      "disponible": 200,
+      "date_mise_en_vente": "2024-03-01"
+    },
+    "meta": {
+      "cree_par": "user123",
+      "date_creation": "2024-02-20",
+      "date_modification": "2024-02-20"
+    }
+  },
+  {
+    "id": "2",
+    "nom": "Fromage Cheddar",
+    "prix": 4794,
+    "description": "Sandales double brides beige",
+    "photos": ["./assets/img/produits/sandales-double-brides-beige-.jpg"],
+    "stock": {
+      "disponible": 200,
+      "date_mise_en_vente": "2024-03-01"
+    },
+    "meta": {
+      "cree_par": "user123",
+      "date_creation": "2024-02-20",
+      "date_modification": "2024-02-20"
+    }
+  },  {
+    "id": "3",
+    "nom": "Fromage Cheddar",
+    "prix": 4794,
+    "description": "Sandales double brides beige",
+    "photos": ["./assets/img/produits/sandales-double-brides-beige-.jpg"],
+    "stock": {
+      "disponible": 200,
+      "date_mise_en_vente": "2024-03-01"
+    },
+    "meta": {
+      "cree_par": "user123",
+      "date_creation": "2024-02-20",
+      "date_modification": "2024-02-20"
+    }
+  },  {
+    "id": "4",
+    "nom": "Fromage Cheddar",
+    "prix": 4794,
+    "description": "Sandales double brides beige",
+    "photos": ["./assets/img/produits/sandales-double-brides-beige-.jpg"],
+    "stock": {
+      "disponible": 200,
+      "date_mise_en_vente": "2024-03-01"
+    },
+    "meta": {
+      "cree_par": "user123",
+      "date_creation": "2024-02-20",
+      "date_modification": "2024-02-20"
+    }
+  }
+]
+   

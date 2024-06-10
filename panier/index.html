@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Joyalestore</title>
+</head>
+
+<body>
+    <div id="root">
+        <header>
+            <div class="wrapper col-12 d-flex justify-content-around  flex-wrap ">
+                <div class="phone-number col-lg-3 col-md-6 d-flex align-items-center gap-1">
+                    <img src="./assets/img/cms/ico_customer_service.png" alt="" width="35" height="35">
+                    Service client: <a href="tel:+">06 49 54 94 19</a>
+                </div>
+                <div class="delivery col-lg-3 col-md-6 d-md-flex d-none align-items-center gap-1">
+                    <img src="./assets/img/cms/ico_customer_service.png" alt="" width="35" height="35">
+                    Livraison Mondial Relay offerte à partir de 100€
+                </div>
+                <div class="click-collect col-lg-3  d-xl-flex d-lg-flex  d-none  align-items-center gap-1">
+                    <img src="./assets/img/cms/ico_click_collect.png" alt="" width="35" height="35">
+                    Click & Collect - La Grande Motte
+                </div>
+            </div>
+            <div class="bottomnav w-100 p-5">
+                <div class="inner d-flex col-12">
+                    <div class="inner-left col-4">
+                        <div class="search-container w-75">
+                            <form action=" " method="get" class="search-form  w-100 d-flex justify-content-between p-2">
+                                <input type="text" class="search w-100 "
+                                    placeholder="Faire une recherche dans notre catalogue">
+                                <button type="submit" class="search-btn">
+                                    <i class="fa fa-search search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="inner-right col-8 d-flex justify-content-end gap-4">
+                        <div class="my-account my-cart d-flex align-items-center gap-1">
+                            <a href="">
+                                <i class="icon fa fa-user"></i>
+                                <span class="text-title">Mon compte</span>
+                            </a>
+                        </div>
+                        <div class="my-cart d-flex align-items-center gap-1">
+                            <i class="shopping-cart fa fa-shopping-cart"></i>
+                            <span class="title-cart">Mon panier</span>
+                            <span class="cart-products-count">
+                                <span class="zero">0</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="logo-container d-flex justify-content-center">
+                <a href="">
+                    <img src="./assets/img/joyalestorecom-logo-1617790973.jpg" alt="" srcset="" width="">
+                </a>
+            </div>
+            <div class="navbar p-5">
+                <nav class="w-100 d-flex justify-content-center align-items-center">
+                    <ul class="d-xl-flex d-none gap-3">
+                        <li class="link"><a href="" class="nav-link nav-link-1">Prêt à porter<span> </span> </a> </li>
+                        <li><a href="" class="nav-link">Chaussurers <span></span> </a></li>
+                        <li><a href="" class="nav-link">Accessoires <span></span></a></li>
+                        <li><a href="" class="nav-link">Sacs & petite maroquinerie <span></span></a></li>
+                        <li><a href="" class="nav-link">Bijoux</a></li>
+                        <li><a href="" class="nav-link">Homme</a></li>
+                        <li><a href="" class="nav-link">Nouvelle collection</a></li>
+                        <li><a href="" class="nav-link">Promo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="panier col-12 p-5">
+                <div class="cart-grid-container d-lg-flex d-block  justify-content-between col-12 gap-2">
+                    <div class="cart-grid-left  col-xl-8 col-lg-8 col-12">
+                        <div class="cart-container">
+                            <h3 class="h3 p-2">Mon panier</h3>
+                            <hr>
+                        </div>
+                        <div class="cart-overview">
+                            <span class="no-items p-2">Il n'y a pas d'articles dans votre panier</span>
+                        </div>
+
+                    </div>
+
+                    <div class="cart-grid-right col-lg-4 col-12">
+                        <div class="cart-summary p-2">
+                            <div class="cart-detailed-totals">
+                                <div class="card-block">
+                                    <div class="cart-summary-line d-flex justify-content-between"
+                                        id="cart-subtotal-products">
+                                        <span class="label js-subtotal">0 articles </span>
+                                        <span class="value">0,00 €</span>
+                                    </div>
+                                    <div class="cart-summary-line d-flex justify-content-between"
+                                        id="cart-subtotal-shipping">
+                                        <span class="label">Livraison</span>
+                                        <span class="value">gratuit</span>
+                                    </div>
+                                </div>
+
+                                <hr>
+                                <div class="card-block cart-summary-totals">
+                                    <div class="cart-summary-line cart-total d-flex justify-content-between">
+                                        <span class="label">Total&nbsp;TTC</span>
+                                        <span class="value">0,00&nbsp;€</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout text-xs-center card-block d-flex justify-content-center ">
+                                <button type="button" class="btn btn-primary disabled" disabled="">Check-out</button>
+                            </div>
+                        </div>
+
+                        <div class="blockreassurance_product">
+                            <div class="item-product-container">
+                                <span class="item-product">
+                                    <img src="./assets/img/theme/rea_customer_service.png"/>
+                                </span>
+                                <p class="block-title" style="color:#000000;">Service client au 06 49 54 94 19</p>
+                            </div>
+                            <div class="item-product-container">
+                                <span class="item-product">
+                                    <img
+                                        src="./assets/img/theme/reassurance-joya-le-store-moyens-paiements.png"/>
+            
+                                </span>
+                                <p class="block-title" style="color:#000000;">Paiements sécurisés; 3x sans frais avec Alma
+                                </p>
+                            </div>
+                            <div class="item-product-container">
+                                <span class="item-product">
+                                    <img class=""
+                                        src="./assets/img/theme/rea_shipping.png"/>  
+                                </span>
+                                <p class="block-title" style="color:#000000;">Livraison offerte avec Mondial Relay à partir de
+                                    100€</p>
+                            </div>
+                            <div class="item-product-container">
+                                <span class="item-product">
+                                    <img src="./assets/img/theme/rea_click_collect.png"/>
+                                    
+                                </span>
+                                <p class="block-title" style="color:#000000;">Click; Collect à La Grande Motte</p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+                <a class="label" href="https://www.joyalestore.com/">Continuer vos achats</a>
+            </section>
+
+            <section class="details-container d-lg-flex d-block p-5">
+                <!-- <div class="details-container-item-left  col-md-6 col-12 ">
+                    <div class="details-left ">
+                        <div class="product-image">
+                            <img class="w-100" src="./assets/img/produits/sandales-double-brides-beige-.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="details-container-item-right  col-md-6 col-12">
+                    <div class="details-right ">
+                        <div class="product-title-details">
+                            <h3>Robe léopard</h3>
+                        </div>
+
+                        <div class="product-prix-details">
+                            <h3>39,00 €</h3>
+                        </div>
+                        <hr>
+                        <div class="">
+                            <div class="product-quantity d-flex align-items-center gap-4">
+                                <span class="control-label">Quantité</span>
+                                <div class="qty">
+                                  <input class="input-qty" type="number" min="1" value="1">
+                                </div>
+                            </div>
+
+                            <div class="add">
+                                <button class="btn btn-primary add-to-cart" data-button-action="add-to-cart" type="submit">
+                                  <i class="fa fa-shopping-cart"></i>
+                                  Ajouter au panier
+                                </button>
+                            </div>
+                            
+                        </div>
+
+
+                        <div class="blockreassurance_product">
+                            <div class="item-product-container">
+                                <span class="item-product">
+                                    <img src="./assets/img/theme/rea_customer_service.png"/>
+                                </span>
+                                <p class="block-title" style="color:#000000;">Service client au 06 49 54 94 19</p>
+                            </div>
+                            <div class="item-product-container">
+                                <span class="item-product">
+                                    <img
+                                        src="./assets/img/theme/reassurance-joya-le-store-moyens-paiements.png"/>
+            
+                                </span>
+                                <p class="block-title" style="color:#000000;">Paiements sécurisés; 3x sans frais avec Alma
+                                </p>
+                            </div>
+                            <div class="item-product-container">
+                                <span class="item-product">
+                                    <img class=""
+                                        src="./assets/img/theme/rea_shipping.png"/>  
+                                </span>
+                                <p class="block-title" style="color:#000000;">Livraison offerte avec Mondial Relay à partir de
+                                    100€</p>
+                            </div>
+                            <div class="item-product-container">
+                                <span class="item-product">
+                                    <img src="./assets/img/theme/rea_click_collect.png"/>
+                                    
+                                </span>
+                                <p class="block-title" style="color:#000000;">Click; Collect à La Grande Motte</p>
+                            </div>
+                            <div class="clearfix"></div>
+                            <hr>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="banner-footer w-sm-100 ">
+                    <img src="./assets/img/cms/banner_magasin_lagrandemotte.jpg" alt="" srcset="" class="w-100">
+                </div>
+
+                <div class="p-5">
+                    <div class="nav-footer d-flex flex-wrap">
+                        <div class="about col-xl-3 col-sm-12 d-flex flex-column gap-2">
+                            <div class="logo">
+                                <img src="./assets/img/joyalestorecom-logo-1617790973.jpg" alt="" class="w-75">
+                            </div>
+                            <h1>A PROPOS DE NOUS</h1>
+                            <div class="address-container d-flex align-items-center gap-2 ">
+                                <span class="about-icon address-icon "><i class="fa fa-home"></i></span>
+                                <span class="address"> 25 Quai Charles de Gaulle, LA GRANDE MOTTE, France </span>
+                            </div>
+                            <div class="phone-container align-items-center d-flex gap-2">
+                                <span class="about-icon phone-icon"><i class="fa fa-phone"></i></span>
+                                <span class="phone"> 06 49 54 94 19</span>
+                            </div>
+                            <div class="mail-container d-flex align-items-center gap-2">
+                                <span class="about-icon mail-icon"><i class="fa fa-envelope"></i></span>
+                                <span class="mail"><a href="">no-reply@joyalestore.com</a></span>
+                            </div>
+                        </div>
+                        <div
+                            class="category-container d-xl-block d-lg-block d-sm-block d-none col-xl-3 col-lg-3 col-sm-4">
+                            <div class="category-item">
+                                <h1>CATEGORIE</h1>
+                                <ul class="d-flex flex-column gap-2">
+                                    <li><a href="">PRET A PORTER</a></li>
+                                    <li><a href="">CHAUSSURES</a></li>
+                                    <li><a href="">ACCESSOIRES</a></li>
+                                    <li><a href="">SACS & PETITE MAROQUINERIE</a></li>
+                                    <li><a href="">CARTE CADEAU</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="information-container cd-xl-block d-lg-block d-sm-block d-none col-xl-3 col-lg-3 col-sm-4">
+                            <div class="information-item">
+                                <h1>INFORMATION</h1>
+                                <ul class="d-flex flex-column gap-2">
+                                    <li><a href="">MENTIONS LEGALES</a></li>
+                                    <li><a href="">CONDITIONS D'UTILISATION ET VENTES</a></li>
+                                    <li><a href="">ACCESSOIRES</a></li>
+                                    <li><a href="">SACS & PETITE MAROQUINERIE</a></li>
+                                    <li><a href="">CARTE CADEAU</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="follow-us-container cd-xl-block d-lg-block d-sm-block col-xl-3 col-lg-3 col-sm-4">
+                            <div class="follow-us-item">
+                                <h1>SUIVEZ-NOUS</h1>
+                                <div class="facebook-container w-100">
+
+                                </div>
+                                <div class="instagram">
+                                    <span class="mail"><img src="./assets/img/cms/logo-instagram-joyalestore.png" alt=""
+                                            width="35" height="35"></span>
+                                    <span class="mail"><a href="">RETROUVEZ JOYA LE STORE SUR INSTAGRAM !</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inscription-container p-5">
+                    <div class="inscription-item">
+                        <h1 class="text-center">INSCRIPTION A LA NEWSLETTER</h1>
+                        <p class="text-center">Vous pouvez vous désinscrire à tout moment. Vous trouverez pour cela nos
+                            informations de contact dans les conditions d'utilisation du site.</p>
+                        <div class="inscription-form  w-100">
+                            <form action="" method="get" class="w-100 d-flex justify-content-center">
+                                <input type="email" name="mail" id="mail" class="mail" placeholder="VOTRE-EMAIL ...">
+                                <input type="submit" value="SOUSCRIRE" class="btn-submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-container w-100 text-center">
+                    © 2024 - Créé par l'ANFCI
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./assets/js/index.js" type="module"></script>
+</body>
+
+</html>
