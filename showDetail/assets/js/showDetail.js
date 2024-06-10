@@ -79,5 +79,6 @@ const renderShowDetail = (product, container) =>{
     container.innerHTML = render;
 }
 renderShowDetail(myProducts[0], container)
-
-const addToCart = (product, container)=>{}
+const addToCart = (product, container)=>{
+    
+}
