@@ -1,12 +1,25 @@
+
+const update = (array)=>{
+    localStorage.setItem('myProducts', JSON.stringify(array));
+}
+// localStorage.setItem('myProducts', JSON.stringify(myProducts));
+
 fetch('./assets/data/data.json')
     .then(response => response.json())
     .then(products => {
-        const container = document.querySelector('.product-container')
+        // const container = document.querySelector('.product-container')
         products.forEach(product => {
-            addProduct(product, container)
+            // addProduct(product, container)
         });
     })
-
+const btn = document.querySelector('.btn-primary')
+console.log(btn);
+const MyProducts = JSON.parse(localStorage.getItem('myProducts')) 
+btn.addEventListener('click', ()=>{
+    MyProducts.push(12)
+    update(MyProducts)
+})
+console.log(MyProducts);
 const addProduct = (product, container)=>{
     container.innerHTML += `
         <div class="product col-lg-3 ">

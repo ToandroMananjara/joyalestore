@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Joyalestore</title>
+</head>
+<body>
+    <div id="root">
+        <header>
+            <div class="wrapper col-12 d-flex justify-content-around  flex-wrap ">
+               <div class="phone-number col-lg-3 col-md-6 d-flex align-items-center gap-1">
+                    <img src="./assets/img/cms/ico_customer_service.png" alt="" width="35" height="35">
+                    Service client: <a href="tel:+">06 49 54 94 19</a>
+               </div>
+               <div class="delivery col-lg-3 col-md-6 d-md-flex d-none align-items-center gap-1">
+                    <img src="./assets/img/cms/ico_customer_service.png" alt="" width="35" height="35">
+                    Livraison Mondial Relay offerte à partir de 100€
+                </div>
+                <div class="click-collect col-lg-3  d-xl-flex d-lg-flex  d-none  align-items-center gap-1">
+                    <img src="./assets/img/cms/ico_click_collect.png" alt="" width="35" height="35">
+                    Click & Collect - La Grande Motte
+                </div>
+            </div>
+            <div class="bottomnav w-100 p-5">
+                <div class="inner d-flex col-12">
+                    <div class="inner-left col-4">
+                        <div class="search-container w-75">
+                            <form action=" "  method="get" class="search-form  w-100 d-flex justify-content-between p-2">
+                                <input type="text" class="search w-100 " placeholder="Faire une recherche dans notre catalogue">
+                                <button type="submit" class="search-btn">
+                                    <i class="fa fa-search search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="inner-right col-8 d-flex justify-content-end gap-4">
+                        <div class="my-account my-cart d-flex align-items-center gap-1">
+                            <a href="">
+                                <i class="icon fa fa-user"></i>
+                                <span class="text-title">Mon compte</span>
+                            </a>
+                            <div class="account-item">
+                                <ul>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                                            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"/>
+                                        </svg>
+                                        se connecter
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                        </svg>
+                                        Mon compte
+                                    </li>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket3-fill" viewBox="0 0 16 16">
+                                            <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z"/>
+                                        </svg>
+                                      Check out
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="my-cart d-flex align-items-center gap-1">
+                            <i class="shopping-cart fa fa-shopping-cart"></i>
+                            <span class="title-cart">Mon panier</span>
+                            <span class="cart-products-count">
+                            <span class="zero">0</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="logo-container d-flex justify-content-center">
+                <a href="">
+                    <img src="./assets/img/joyalestorecom-logo-1617790973.jpg" alt="" srcset="" width="">
+                </a>
+            </div>
+            <div class="navbar p-5">
+                <nav class="w-100 d-flex justify-content-center align-items-center">
+                    <ul class="d-xl-flex d-none gap-3">
+                        <li class="link">
+                            <a href="" class="nav-link nav-link-1">Prêt à porter<span> </span> </a>
+                            <div class="contenu">
+                                <ul>
+                                    <a href=""><li>Robes</li></a>
+                                    <a href=""><li>Jupes</li></a>
+                                    <a href=""><li>Pantalons & Shorts</li></a>
+                                    <a href=""><li>Vestes & Manteaux</li></a>
+                                    <a href=""><li>Tee-shirt</li></a>
+                                    <a href=""><li>Débardeurs</li></a>
+                                    <a href=""><li>Chemisiers</li></a>
+                                    <a href=""><li>Pulls & Gilets</li></a>
+                                    <a href=""><li>Drop de la semaine</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li  class="link">
+                            <a href="" class="nav-link">Chaussurers <span></span> </a>
+                            <div class="contenu">
+                                <ul>
+                                    <a href=""><li>Baskets</li></a>
+                                    <a href=""><li>Escarpins</li></a>
+                                    <a href=""><li>Sandales</li></a>
+                                    <a href=""><li>Bottes & Bottines</li></a>
+                                    <a href=""><li>Mocassins</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="link">
+                            <a href="" class="nav-link">Accessoires <span></span></a>
+                            <div class="contenu">
+                                <ul>
+                                    <a href=""><li>Ceintures</li></a>
+                                    <a href=""><li>Lunettes</li></a>
+                                    <a href=""><li>Casquettes & Chapeaux</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="link">
+                            <a href="" class="nav-link">Sacs & petite maroquinerie <span></span></a>
+                            <div class="contenu">
+                                <ul>
+                                    <a href=""><li>Sacs à bandoulière</li></a>
+                                    <a href=""><li>Sacs cabas</li></a>
+                                    <a href=""><li>Pochettes</li></a>
+                                    <a href=""><li>Portefeuilles & Monnaie</li></a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="link"><a href="" class="nav-link">Bijoux</a></li>
+                        <li class="link"><a href="" class="nav-link">Homme</a></li>
+                        <li class="link"><a href="" class="nav-link">Nouvelle collection</a></li>
+                        <li class="link"><a href="" class="nav-link">Promo</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="home-container p-5">
+                <div class="home-image ">
+                    <div class="home-image-left">
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="home-image-right">
+                        <img src="" alt="" srcset="">
+                    </div>
+                </div>
+            </section>
+            <section class="nouveaute-container p-5">
+                <div class="nouveaute ">
+                     <div class="product-container col-12 d-flex flex-wrap">
+
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <div class="footer">
+                <div class="banner-footer w-sm-100 ">
+                    <img src="./assets/img/cms/banner_magasin_lagrandemotte.jpg" alt="" srcset="" class="w-100">
+                </div>
+
+                <div class="p-5">
+                    <div class="nav-footer d-flex flex-wrap">
+                        <div class="about col-xl-3 col-sm-12 d-flex flex-column gap-2">
+                            <div class="logo">
+                                <img src="./assets/img/joyalestorecom-logo-1617790973.jpg" alt="" class="w-75">
+                            </div>
+                            <h1>A PROPOS DE NOUS</h1>
+                            <div class="address-container d-flex align-items-center gap-2 ">
+                                <span class="about-icon address-icon "><i class="fa fa-home"></i></span>
+                                <span class="address"> 25 Quai Charles de Gaulle, LA GRANDE MOTTE, France </span>
+                            </div>
+                            <div class="phone-container align-items-center d-flex gap-2">
+                                <span class="about-icon phone-icon"><i class="fa fa-phone"></i></span>
+                                <span class="phone"> 06 49 54 94 19</span>
+                            </div>
+                            <div class="mail-container d-flex align-items-center gap-2">
+                                <span class="about-icon mail-icon"><i class="fa fa-envelope"></i></span>
+                                <span class="mail"><a href="">no-reply@joyalestore.com</a></span>
+                            </div>
+                        </div>
+                        <div class="category-container d-xl-block d-lg-block d-sm-block d-none col-xl-3 col-lg-3 col-sm-4">
+                            <div class="category-item">
+                                <h1>CATEGORIE</h1>
+                                <ul class="d-flex flex-column gap-2">
+                                    <li ><a href="">PRET A PORTER</a></li>
+                                    <li><a href="">CHAUSSURES</a></li>
+                                    <li><a href="">ACCESSOIRES</a></li>
+                                    <li><a href="">SACS & PETITE MAROQUINERIE</a></li>
+                                    <li><a href="">CARTE CADEAU</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="information-container cd-xl-block d-lg-block d-sm-block d-none col-xl-3 col-lg-3 col-sm-4">
+                            <div class="information-item">
+                                <h1>INFORMATION</h1>
+                                <ul class="d-flex flex-column gap-2">
+                                    <li><a href="">MENTIONS LEGALES</a></li>
+                                    <li><a href="">CONDITIONS D'UTILISATION ET VENTES</a></li>
+                                    <li><a href="">ACCESSOIRES</a></li>
+                                    <li><a href="">SACS & PETITE MAROQUINERIE</a></li>
+                                    <li><a href="">CARTE CADEAU</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="follow-us-container cd-xl-block d-lg-block d-sm-block col-xl-3 col-lg-3 col-sm-4">
+                            <div class="follow-us-item">
+                                <h1>SUIVEZ-NOUS</h1>
+                                <div class="facebook-container w-100">
+
+                                </div>
+                                <div class="instagram">
+                                    <span class="mail"><img src="./assets/img/cms/logo-instagram-joyalestore.png" alt="" width="35" height="35"></span>
+                                    <span class="mail"><a href="">RETROUVEZ JOYA LE STORE SUR INSTAGRAM !</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inscription-container p-5">
+                    <div class="inscription-item">
+                        <h1 class="text-center">INSCRIPTION A LA NEWSLETTER</h1>
+                        <p class="text-center">Vous pouvez vous désinscrire à tout moment. Vous trouverez pour cela nos informations de contact dans les conditions d'utilisation du site.</p>
+                        <div class="inscription-form  w-100">
+                            <form action="" method="get" class="w-100 d-flex justify-content-center">
+                                <input type="email" name="mail"  id="mail" class="mail" placeholder="VOTRE-EMAIL ...">
+                                <input type="submit" value="SOUSCRIRE" class="btn-submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-container w-100 text-center">
+                    © 2024 - Créé par l'ANFCI 
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="./assets/js/showDetail.js" type="module"></script>
+</body>
+</html>

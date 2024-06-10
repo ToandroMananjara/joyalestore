@@ -1,3 +1,8 @@
+export {myProducts, updateLocal } 
+const updateLocal = (array)=>{
+    localStorage.setItem('myProduct', JSON.stringify(array));
+} 
+const myProducts = []   
 fetch('./assets/data/data.json')
     .then(response => response.json())
     .then(products => {
@@ -6,12 +11,13 @@ fetch('./assets/data/data.json')
             addProduct(product, container)
             console.log(this);
         });
-        showProduct(products, container)
+        showProduct(products)
     })
     
 const addProduct = (product, container)=>{
     container.innerHTML += `
         <div class="product col-lg-3 " data-id = "${product.id}">
+        <a href="./showDetail/showDetail.html">
             <div class="product-image w-100">
                 <img src="${product.photos[0]}" alt="" srcset="" class="w-100">
             </div>
@@ -28,26 +34,29 @@ const addProduct = (product, container)=>{
                     <span class="star"></span>
                 </div>
             </div>
+        </a>
+            
         </div>
     ` 
 }
 
-const showProduct = (products, container)=>{
+const showProduct = (products)=>{
     const productItems = document.querySelectorAll('.product');
-    let myProduct = []
     productItems.forEach(productItem =>{
         productItem.addEventListener('click', (e)=>{
             console.log(typeof(productItem.getAttribute("data-id")));
-            myProduct = products.filter(product => {
+            const myProductItems = products.filter(product => {
                 return product.id == productItem.getAttribute("data-id");
             })
-            console.log(myProduct);
-            renderShowDetail(myProduct[0], container)
+            myProducts.push(myProductItems[0]) 
+            updateLocal(myProductItems)
+            console.log(myProducts);
+            // renderShowDetail(myProductItems[0], container)
         })  
     }) 
    
 }
-
+/*
 const renderShowDetail = (product, container) =>{
     const render = `
     <div class="details-container-item-left  col-md-6 col-12 " data-id = "${product.id}">
@@ -125,3 +134,4 @@ const renderShowDetail = (product, container) =>{
     container.innerHTML = render;
     
 }
+*/
